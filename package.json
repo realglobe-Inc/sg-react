@@ -1,0 +1,54 @@
+{
+  "name": "sg-react",
+  "version": "1.0.0",
+  "description": "React utility for SUGOS",
+  "main": "lib",
+  "browser": "browser",
+  "scripts": {
+    "test": "./ci/test.js",
+    "prepublish": "./ci/assets.js && ./ci/build.js && ./ci/browser.js"
+  },
+  "repository": "realglobe-Inc/sg-react",
+  "keywords": [
+    "SUGOS",
+    "React"
+  ],
+  "author": {
+    "name": "Taka Okunishi",
+    "email": "okunishitaka.com@gmail.com",
+    "url": "http://okunishitaka.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/realglobe-Inc/sg-react/issues"
+  },
+  "homepage": "https://github.com/realglobe-Inc/sg-react#readme",
+  "dependencies": {
+    "co": "^4.6.0"
+  },
+  "devDependencies": {
+    "ape-covering": "^3.0.3",
+    "ape-formatting": "^1.0.0",
+    "ape-releasing": "^4.0.1",
+    "ape-reporting": "^3.0.1",
+    "ape-tasking": "^4.0.2",
+    "ape-testing": "^4.0.0",
+    "ape-tmpl": "^5.0.10",
+    "ape-updating": "^4.0.1",
+    "coz": "^6.0.3",
+    "injectmock": "^2.0.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  },
+  "peerDependencies": {
+    "react": ">=15",
+    "react-dom": ">=15"
+  },
+  "engines": {
+    "node": ">=6.x",
+    "npm": ">=3.x"
+  },
+  "publishConfig": {
+    "registry": "https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-local"
+  }
+}
