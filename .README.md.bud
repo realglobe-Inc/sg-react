@@ -5,7 +5,9 @@
 'use strict'
 
 const apeTmpl = require('ape-tmpl')
+const apeDoc = require('ape-doc')
 const pkg = require('./package.json')
+const expandglob = require('expandglob')
 
 module.exports = apeTmpl.readmeMdBud({
   pkg: pkg,
@@ -24,7 +26,19 @@ module.exports = apeTmpl.readmeMdBud({
   overview: 'doc/overview.md',
   links: require('./doc/links'),
   vars: {
-    bannerHeight: 40
+    bannerHeight: 40,
+    funcs: expandglob.sync('lib/*.js')
+      .filter((filename) => !/index\.js$/.test(filename))
+      .map((filename) => {
+        let [comments] = apeDoc.commentsInFile(filename)
+        let [func] = comments.function
+        return {
+          name: func.name,
+          description: comments.description,
+          params: comments.param,
+          returns: comments.returns[ 0 ]
+        }
+      })
   }
 })
 

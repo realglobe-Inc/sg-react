@@ -75,6 +75,7 @@ Usage
 const { mount } = require('sg-react')
 const React = require('react')
 
+// Define an component
 const RootComponent = React.createClass({
   /* ... */
 })
@@ -83,10 +84,12 @@ const CONTAINER_ID = 'my-mount-root-element'
 function onLoad () {
   window.removeEventListener('DOMContentLoaded', onLoad)
 
+  // Create an element from the component and mount it to the DOM tree.
   mount(CONTAINER_ID, RootComponent, {
     // React props
     foo: 'bar'
   }).then(() => {
+    // Promise callback when done.
     console.log('component mounted!')
   })
 }
@@ -97,6 +100,21 @@ window.addEventListener('DOMContentLoaded', onLoad)
 
 
 <!-- Section from "doc/guides/02.Usage.md.hbs" End -->
+
+<!-- Section from "doc/guides/03.Functions.md.hbs" Start -->
+
+<a name="section-doc-guides-03-functions-md"></a>
+Functions
+---------
+
+Available functions
+
+| Signature | Description |
+| ---- | ----------- |
+| `.mount(containerId, Component, props) -> Promise` | Mount a react component into DOM tree. |
+
+
+<!-- Section from "doc/guides/03.Functions.md.hbs" End -->
 
 
 <!-- Sections Start -->

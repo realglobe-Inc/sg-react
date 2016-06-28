@@ -1,12 +1,12 @@
 {
   "name": "sg-react",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "React utility for SUGOS",
   "main": "lib",
   "browser": "browser",
   "scripts": {
     "test": "./ci/test.js",
-    "prepublish": "./ci/assets.js && ./ci/build.js && ./ci/browser.js"
+    "prepublish": "./ci/build.js && ./ci/browser.js"
   },
   "repository": "realglobe-Inc/sg-react",
   "keywords": [
@@ -27,7 +27,9 @@
     "co": "^4.6.0"
   },
   "devDependencies": {
+    "ape-compiling": "^4.3.2",
     "ape-covering": "^3.0.3",
+    "ape-doc": "^2.0.2",
     "ape-formatting": "^1.0.0",
     "ape-releasing": "^4.0.1",
     "ape-reporting": "^3.0.1",
@@ -36,6 +38,7 @@
     "ape-tmpl": "^5.0.10",
     "ape-updating": "^4.0.1",
     "coz": "^6.0.3",
+    "expandglob": "^3.0.2",
     "injectmock": "^2.0.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0"
