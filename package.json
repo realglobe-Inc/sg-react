@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/realglobe-Inc/sg-react#readme",
   "dependencies": {
+    "apeman-brws-react": "^3.0.1",
+    "apeman-brws-window": "^1.0.0",
     "co": "^4.6.0"
   },
   "devDependencies": {

@@ -1,14 +1,14 @@
 /**
- * Test case for windowHelper.
+ * Test case for once.
  * Runs with mocha.
  */
 'use strict'
 
-const windowHelper = require('../lib/helpers/window_helper.js')
+const once = require('../lib/once.js')
 const assert = require('assert')
 const co = require('co')
 
-describe('window-helper', function () {
+describe('once', function () {
   this.timeout(3000)
 
   before(() => co(function * () {
@@ -19,8 +19,8 @@ describe('window-helper', function () {
 
   }))
 
-  it('Window helper', () => co(function * () {
-
+  it('Once', () => co(function * () {
+    assert.ok(once)
   }))
 })
 

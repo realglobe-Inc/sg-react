@@ -36,7 +36,7 @@ module.exports = apeTmpl.readmeMdBud({
           name: func.name,
           description: comments.description,
           params: comments.param,
-          returns: comments.returns[ 0 ]
+          returns: comments.returns && comments.returns[ 0 ]
         }
       })
   }

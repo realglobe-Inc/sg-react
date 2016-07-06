@@ -112,6 +112,7 @@ Available functions
 | Signature | Description |
 | ---- | ----------- |
 | `.mount(containerId, Component, props) -> Promise` | Mount a react component into DOM tree. |
+| `.once(event, handler)` | Bind window event once |
 
 
 <!-- Section from "doc/guides/03.Functions.md.hbs" End -->
