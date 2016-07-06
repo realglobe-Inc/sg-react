@@ -1,6 +1,6 @@
 {
   "name": "sg-react",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "React utility for SUGOS",
   "main": "lib",
   "browser": "browser",
