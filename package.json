@@ -28,21 +28,21 @@
     "co": "^4.6.0"
   },
   "devDependencies": {
-    "ababel": "*",
-    "ababel-es2015": "*",
+    "ababel": "^1.0.19",
+    "ababel-es2015": "^1.0.2",
     "aglob": "^1.0.1",
     "amocha": "^1.0.8",
-    "ape-doc": "*",
-    "ape-formatting": "*",
-    "ape-releasing": "*",
+    "ape-doc": "^2.0.4",
+    "ape-formatting": "^1.0.2",
+    "ape-releasing": "^4.0.2",
     "ape-reporting": "^3.0.1",
-    "ape-tasking": "*",
-    "ape-tmpl": "*",
-    "ape-updating": "*",
-    "coz": "*",
+    "ape-tasking": "^4.0.7",
+    "ape-tmpl": "^5.0.14",
+    "ape-updating": "^4.0.4",
+    "coz": "^6.0.14",
     "injectmock": "^2.0.0",
-    "react": "*",
-    "react-dom": "*"
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
   },
   "peerDependencies": {
     "react": ">=15",

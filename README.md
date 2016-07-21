@@ -53,6 +53,7 @@ React utility for SUGOS
 <!-- Section from "doc/guides/01.Installation.md.hbs" Start -->
 
 <a name="section-doc-guides-01-installation-md"></a>
+
 Installation
 -----
 
@@ -66,6 +67,7 @@ $ npm install sg-react --save
 <!-- Section from "doc/guides/02.Usage.md.hbs" Start -->
 
 <a name="section-doc-guides-02-usage-md"></a>
+
 Usage
 ---------
 
@@ -100,6 +102,7 @@ once('DOMContentLoaded', () => {
 <!-- Section from "doc/guides/03.Functions.md.hbs" Start -->
 
 <a name="section-doc-guides-03-functions-md"></a>
+
 Functions
 ---------
 
@@ -133,6 +136,8 @@ This software is released under the [MIT License](https://github.com/realglobe-I
 Links
 ------
 
-+ [sugos](https://github.com/realglobe-Inc/sugos)
++ [sugos][sugos_url]
+
+[sugos_url]: https://github.com/realglobe-Inc/sugos
 
 <!-- Links End -->
