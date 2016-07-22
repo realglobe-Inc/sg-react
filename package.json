@@ -1,6 +1,6 @@
 {
   "name": "sg-react",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "React utility for SUGOS",
   "main": "lib",
   "browser": "sims/browser",
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/realglobe-Inc/sg-react#readme",
   "dependencies": {
-    "bwindow": "^1.0.1",
+    "bwindow": "^1.0.4",
     "co": "^4.6.0"
   },
   "devDependencies": {
