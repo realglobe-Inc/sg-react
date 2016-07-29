@@ -3,7 +3,7 @@
   "version": "1.0.12",
   "description": "React utility for SUGOS",
   "main": "lib",
-  "browser": "sims/browser",
+  "browser": "shim/browser",
   "scripts": {
     "test": "./ci/test.js",
     "prepublish": "./ci/build.js && ./ci/browser.js"
@@ -24,14 +24,15 @@
   },
   "homepage": "https://github.com/realglobe-Inc/sg-react#readme",
   "dependencies": {
-    "bwindow": "^1.0.4",
+    "asleep": "^1.0.3",
+    "bwindow": "^1.0.6",
     "co": "^4.6.0"
   },
   "devDependencies": {
-    "ababel": "^1.0.19",
-    "ababel-es2015": "^1.0.2",
+    "ababel": "^1.0.25",
+    "ababel-es2015": "^1.0.5",
     "aglob": "^1.0.1",
-    "amocha": "^1.0.8",
+    "amocha": "^1.0.9",
     "ape-doc": "^2.0.4",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.2",
