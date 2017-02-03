@@ -2,13 +2,14 @@ language: node_js
 node_js:
 - '6'
 before_install:
-- echo "registry = https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-virtual" > .npmrc
-- curl -u${NPM_USER}:${NPM_PASSWORD} "https://realglobe.artifactoryonline.com/realglobe/api/npm/auth" >> .npmrc
-- cat .npmrc
+- npm i npm-cli-login -g
+- echo "NPM_USER=${NPM_USER}"
+- npm-cli-login -u "${NPM_USER}" -p "${NPM_PASSWORD}" -e "${NPM_EMAIL}"
 install:
 - npm install
 script:
 - ./ci/build.js
+- ./ci/shim.js
 - ./ci/test.js
-- ./ci/cover.js
-- ./ci/report.js
+env:
+  secure: "ywomgpYA6cV4vthuYQTYzMYzykXADEHBX/+CDgFbvDcWhe2IJ9M3/3R6BAzhK7HMHEE2DDAp/bYq2agvssNhPCy5LYw+F4yPYDSEpBvp5f6S8ZWGVYifvolJRC/tmDQLSPj7kgqPlHsO75MeBiYTKU5UcJBspuoDVgGcIZlmzOSbjPaxwuxG+/xMO6UGams4Kz5UQsA8e/TNUHaJBIb7iKOu+75bJx0hSy9WWYB3Es9Bo57TgiJDHt9DiGw4kkUU3utHdrTbTcJi/11ko0fQfnJYwOGJ9mFqaVutjz7ySKiE7la6q27TYwZjyoIt12Nkka3zXrGfKm7loR42R24G9a7+x2j34RSU/YBCd+ONDKbzhcYRU2e1CmJ/kUQk5naBceqrF4xaae5wv6jJR7KKgTeANsFFr+egl2CiFMFGiHRSbtZVC16PuWkzTUul40GUE+VBhodmP+waUBnWPId/E0VYwhsEjvi7VLn7FFIpNPNJzDpc0TM4V0kku2Ci/z8BLo1hJii6CitWFp/6kpSfhCV08HRrK8NYiq8rMhZVIDdxdFPmelczCldOTckXehOiW4ns0RIs/Ig6U6aaeJ8ndLJ8LcZzy9UrhSI3MIwPoN4Ov0kjOcxnJ4SraYsrTM0aicu/KLaoUW5NGiU/dWkFPd9up2PCXEjEwiYk2NCFp50="
