@@ -13,6 +13,6 @@ script:
 - ./ci/test.js
 after_success:
 - ./ci/travis/publish.js
-- ./ci/travis/push_sugos.js
+- ./ci/travis/push_sugos_index.js
 env:
   secure: "nt8RTPaTHEaAdoCCE1WU/ZpcTKhX+v9ViFp90LGhWLHIOTP0phTspZ8I6KkerZCwtXGFz8fHl5ncaxElSeKDJHuP6n1wKxPgueyGvYHTKCma/sXdekvpCPf7qYw3ssKOaWu+xAVTXiAxk0LGSyPjVNU0owmvspQmVjFHawrSqiFze829I6cqabWb1PdJkrRU6GRZn0RTsoV4UoQbsa37t6efOoDIa8UF8wFMqP/KQEfe3ecna8CQFsU41OoVSYPx2bxDB6DfWlz+9Muh9NGLqYP9QEG8Z6Arxa+qGIDOSHa060Q44/2ER46IB+6cZkyeFxXo+F4ahQdSnrX5R0/6FBhmnpA2/+1VqL5KCTpfDDCzDQkGKYeScj1ub9z79cFQXYt7XW5PFCnjcLeMu+FWHmCFF6G6grn6nxek1oR3tShtH80htlqSVPBJwucDLvwOxrjXUk3y20lOG9j2bhl/I5CGRFQ0QedPXTlmiIar01Vlp+7IeEssk/fRFdGHgmg+qwHBFz0O3oJVOTzkKpKpvAP2Uer+QmF60UZC/UKKEL+fECiGEPriDxCFx/rH4Iw3G1EjGjzPrzEOnQ8DInxIQvuGMPRUo68vgkdDvecrpb5HSY0JzWoNwIWqqLp3rKdzWAs9qajEqSnkXR3xhACobUKCwePUJi5O2CicvxT/GWw="
